@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>AgendaFácil NAF</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="interface"> 
+        <header id="header">
+            <div class="titulo">
+                <h1>AgendaFácil NAF</h1>
+                <script>
+                    document.write('<p>UNIFESO ADS ' + new Date().getFullYear() + ' - Theo Bittencourt e Bernardo Micati.</p>');
+                </script>
+            </div>
+        </header>
+
+        <form method="post" id="fContato" action="#" oninput="calc_total();">
+            <fieldset id="reserva">
+                <h2>Faça sua reserva!</h2>
+                <h3>Seu nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"></h3>
+                <h3>Quando será?<input type="datetime-local" name="tData" id="cData" size="20" maxlength="30"></h3>
+                <div class="submit-buttons">
+                    <a href="acao-concluida.html"><input id="submit" class="enviar" type="button" value="Enviar"></a>
+                    <a href="home.html"><input id="clean" class="limpar" type="button" value="Limpar"></a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
